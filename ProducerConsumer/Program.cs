@@ -73,15 +73,12 @@ namespace ProducerConsumer
                 string item = storage.ElementAt(0);
                 storage.RemoveAt(0);
                 
-                //------------------
-                //Normaly it mast be changed
                 Full.Release();
                 
                 
                 
                 Access.Release();
-                //-------------
-
+                
                 Console.WriteLine("Took " + item);
             }
         }
